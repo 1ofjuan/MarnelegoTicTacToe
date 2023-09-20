@@ -78,10 +78,20 @@ body{
     transform: skewY(-45deg);
   }
 
-h1 {
+  h1 {
     color: coral;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-size: 3em;
 }
 
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(240, 37, 255, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 30px rgba(240, 37, 255, 0.7);
+    }
+}
 #game-over-area {
     text-align: center;
     border: rgb(80, 50, 109) 10px solid;
